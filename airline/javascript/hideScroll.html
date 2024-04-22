@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number List</title>
+    <style>
+      p {
+        width: 100%;
+        height: 40px;
+        background-color: green;
+        margin: 4px;
+
+        animation-name: hide;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+      }
+
+      @keyframes hide {
+        0% {
+          opacity: 1;
+          margin: 4px;
+          height: 40px;
+        }
+
+        75% {
+          opacity: 0;
+          margin: 4px;
+          height: 40px;
+        }
+
+        100% {
+          opacity: 0;
+          height: 0px;
+          line-height: 0px;
+          padding: 0px;
+          margin: 0px;
+        }
+      }
+    </style>
+    <script>
+      window.onscroll = () => {
+        console.log(window.innerHeight, window.scrollY, document.body.offsetHeight)
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+          document.querySelector('body').style.background = 'green'
+        } else {
+          document.querySelector('body').style.background = 'white'
+        }
+      }
+
+
+
+      document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('click', e => {
+          const element = e.target
+          if (element.className == 'hide') {
+            // element.remove()
+            element.style.animationPlayState = 'running'
+            element.addEventListener('animationend', () => {
+              element.remove()
+            })
+          }
+        })
+      })
+    </script>
+</head>
+<body>
+    <p class="hide">1</p>
+    <p class="hide">2</p>
+    <p class="hide">3</p>
+    <p class="hide">4</p>
+    <p class="hide">5</p>
+    <p class="hide">6</p>
+    <p class="hide">7</p>
+    <p class="hide">8</p>
+    <p class="hide">9</p>
+    <p class="hide">10</p>
+    <p class="hide">11</p>
+    <p class="hide">12</p>
+    <p class="hide">13</p>
+    <p class="hide">14</p>
+    <p class="hide">15</p>
+    <p class="hide">16</p>
+    <p class="hide">17</p>
+    <p class="hide">18</p>
+    <p class="hide">19</p>
+    <p class="hide">20</p>
+    <p class="hide">21</p>
+    <p class="hide">22</p>
+    <p class="hide">23</p>
+    <p class="hide">24</p>
+    <p class="hide">25</p>
+    <p class="hide">26</p>
+    <p class="hide">27</p>
+    <p class="hide">28</p>
+    <p class="hide">29</p>
+    <p class="hide">30</p>
+    <p class="hide">41</p>
+    <p class="hide">42</p>
+    <p class="hide">43</p>
+    <p class="hide">44</p>
+    <p class="hide">45</p>
+    <p class="hide">46</p>
+    <p class="hide">47</p>
+    <p class="hide">48</p>
+    <p class="hide">49</p>
+    <p class="hide">50</p>
+    <p class="hide">51</p>
+    <p class="hide">52</p>
+    <p class="hide">53</p>
+    <p class="hide">54</p>
+    <p class="hide">55</p>
+    <p class="hide">56</p>
+    <p class="hide">57</p>
+    <p class="hide">58</p>
+    <p class="hide">59</p>
+    <p class="hide">60</p>
+    <p class="hide">61</p>
+    <p class="hide">62</p>
+    <p class="hide">63</p>
+    <p class="hide">64</p>
+    <p class="hide">65</p>
+    <p class="hide">66</p>
+    <p class="hide">67</p>
+    <p class="hide">68</p>
+    <p class="hide">69</p>
+    <p class="hide">70</p>
+    <p class="hide">81</p>
+    <p class="hide">82</p>
+    <p class="hide">83</p>
+    <p class="hide">84</p>
+    <p class="hide">85</p>
+    <p class="hide">86</p>
+    <p class="hide">87</p>
+    <p class="hide">88</p>
+    <p class="hide">89</p>
+    <p class="hide">90</p>
+    <p class="hide">91</p>
+    <p class="hide">92</p>
+    <p class="hide">93</p>
+    <p class="hide">94</p>
+    <p class="hide">95</p>
+    <p class="hide">96</p>
+    <p class="hide">97</p>
+    <p class="hide">98</p>
+    <p class="hide">99</p>
+    <p class="hide">100</p>
+</body>
+</html>
